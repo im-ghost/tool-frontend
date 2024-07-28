@@ -9,7 +9,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="bottom-0 flex items-center h-[5vh] justify-center p-2 text-white bg-black">
-      © 2024 MKx Inc. All Rights Reserved
+      © 2024 Adetonwa Richard All Rights Reserved
     </div>
   )
 }

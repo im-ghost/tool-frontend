@@ -1,5 +1,5 @@
 import NotFound from 'NotFound'
-import { AboutUs, ContactUs, Home } from 'Pages'
+import { AboutUs, ContactUs, Home, Notes ,Note } from 'Pages'
 
 /**
  * Array of route objects defining the routes for the application.
@@ -38,6 +38,20 @@ const routes = [
     path: '/contact-us',
     element: <ContactUs />,
     title: 'Contact Us',
+    status: true,
+  },
+  {
+    id: 4,
+    path: '/notes',
+    element: <Notes />,
+    title: 'Notes',
+    status: true,
+  },
+  {
+    id: 5,
+    path: '/notes/:id',
+    element: <Note />,
+    title: 'Note',
     status: true,
   },
 ]

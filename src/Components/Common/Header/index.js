@@ -18,8 +18,8 @@ const Header = ({ setMode, mode }) => {
   return (
     <Paper className="flex flex-col !rounded-none">
       <div className="flex flex-col gap-3 p-6 text-center">
-        <h1 className="text-4xl font-bold">Brand Name</h1>
-        <Typography>Resize the browser window to see the effect.</Typography>
+        <h1 className="text-4xl font-bold">Tool</h1>
+        <Typography>Learning just got easier.</Typography>
       </div>
       <div className="flex items-center justify-between px-3 bg-black">
         <div className="flex items-center gap-3">
@@ -38,6 +38,13 @@ const Header = ({ setMode, mode }) => {
             className="block float-left p-3 text-white hover:text-black hover:bg-white"
           >
             Contact Us
+          </Link>
+        
+          <Link
+            to="/notes"
+            className="block float-left p-3 text-white hover:text-black hover:bg-white"
+          >
+            Notes
           </Link>
         </div>
         {/* Dark mode / Light mode toggle button */}
