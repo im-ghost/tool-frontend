@@ -9,7 +9,7 @@ import { Link as RouterLink } from 'react-router-dom'
 const NotFound = () => {
   return (
     <Container maxWidth="sm" sx={{ textAlign: 'center', mt: 8 }}>
-      <Typography variant="h1" component="h1" gutterBottom>
+      <Typography variant="h1" component="h3" gutterBottom>
         404 - Page Not Found
       </Typography>
       <Typography variant="body1" gutterBottom>

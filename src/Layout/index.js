@@ -1,8 +1,9 @@
+import eruda from "eruda";
 import { Paper, ThemeProvider, createTheme } from '@mui/material'
 import { Footer, Header } from 'Components/Common'
 import { useCookieStorage } from 'react-mkx-storage'
 import { Outlet } from 'react-router-dom'
-
+import { useEffect} from "react"
 /**
  * Layout component to provide consistent layout structure throughout the application.
  * @returns {JSX.Element} Layout component JSX
@@ -16,6 +17,9 @@ const Layout = () => {
   const [mode, setMode] = useCookieStorage('mode', 'dark')
 
   // Create MUI theme based on the selected mode
+  useEffect(()=> {
+    eruda.init()
+  },[])
   const theme = createTheme({ palette: { mode } })
 
   // Determine if the mode is dark

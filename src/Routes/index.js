@@ -1,5 +1,5 @@
 import NotFound from 'NotFound'
-import { AboutUs, ContactUs, Home, Notes ,Note } from 'Pages'
+import { AboutUs, ContactUs, Home, Notes ,Note,Add } from 'Pages'
 
 /**
  * Array of route objects defining the routes for the application.
@@ -52,6 +52,13 @@ const routes = [
     path: '/notes/:id',
     element: <Note />,
     title: 'Note',
+    status: true,
+  },
+  {
+    id: 6,
+    path: '/add',
+    element: <Add />,
+    title: 'Add',
     status: true,
   },
 ]

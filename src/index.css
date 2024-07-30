@@ -2,16 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Scroll Bar CSS */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+.toolbar {
+  @apply flex gap-2 mb-4;
 }
 
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
+.toolbar button {
+  @apply bg-blue-600 text-white px-4 py-2 rounded;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.1);
+.case-list {
+  @apply mt-4 p-2 border-t-2 border-gray-300;
+}
+
+.note-editor {
+  @apply border border-gray-300 p-4 rounded bg-white shadow-md;
+}
+
+.note-card {
+  @apply bg-white shadow-md rounded p-4 w-full max-w-md mb-4;
 }

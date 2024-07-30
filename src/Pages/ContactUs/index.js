@@ -17,15 +17,15 @@ const ContactUs = () => {
         </Typography>
         
        <div className=" flex lg:flex-row flex-col">
-        <Button className="p-2 m-12" variant="contained" href="mailto:culestfrosh@gmail.com">
+        <div className="m-2"><Button  className="p-2 m-2" variant="contained" href="mailto:culestfrosh@gmail.com">
           Email
-        </Button>
-        <Button className="p-2 m-12" variant="contained" href="tel:09152694711">
+        </Button></div>
+        <div className="m-2"><Button  className="p-2 m-2" variant="contained" href="tel:09152694711">
           Call us
-        </Button>
-        <Button className="p-2 m-12" variant="contained" href="https://wa.me/+2349152694711">
+        </Button></div>
+        <div className="m-2"><Button  className="p-2 m-2" variant="contained" href="https://wa.me/+2349152694711">
           Whatsapp
-        </Button>
+        </Button></div>
         </div>
       </Box>
     </div>
