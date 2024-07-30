@@ -5,6 +5,7 @@ import NoteCard from './NoteCard';
 
 const NoteList = () => {
   const [notes, setNotes] = useState([]);
+  
 
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];

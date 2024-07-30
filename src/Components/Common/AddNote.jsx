@@ -6,16 +6,10 @@ import Editor from './Editor';
 const AddNote = () => {
   const navigate = useNavigate();
   const [title, setTitle] = useState('');
-  const [content, setContent] = useState([
-  {
-    type: 'paragraph',
-    children: [{ text: 'A line of text in a paragraph.' }],
-  },
-]);
+  const dContent = [{type: 'paragraph',children: [{ text: 'A line of text in a paragraph.'}],}]
+  const [content, setContent] = useState(dContent);
 useEffect(()=>{
-  console.log("before content")
-  console.log(content)
-  console.log("after content")
+  
 },[])
     const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
     const addNote = () =>{
@@ -35,10 +29,10 @@ useEffect(()=>{
         type="text"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        className="p-2 border border-gray-300 rounded"
+        className="p-2 border border-gray-300 rounded dark:bg-black-900 bg-white-200"
         placeholder="Title"
       />
-      <Editor initialValue={content} onChange={setContent} />
+    <Editor initialValue={content} onChange={setContent} />
       <button onClick={addNote} className="px-4 py-2 bg-blue-600 text-white rounded">Add</button>
     </div>
   );

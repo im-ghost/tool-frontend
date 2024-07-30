@@ -28,7 +28,7 @@ const Layout = () => {
   return (
     <ThemeProvider theme={theme}>
       <Paper
-        style={{ backgroundColor: isDark ? 'rgb(39 39 42)' : 'rgb(244 244 245)' }}
+        style={{ backgroundColor: isDark ? 'rgb(39 39 42)' : 'rgb(244 244 245)' ,color: isDark ? 'rgb(244 244 245)' :  'rgb(39 39 42)'}}
         className="!rounded-none"
         elevation={10}
       >

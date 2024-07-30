@@ -1,5 +1,5 @@
-import Editor from "Components/Common/Editor"
+import AddNote from "Components/Common/AddNote"
 const Add = () =>{
-  return <Editor />
+  return <AddNote />
 }
 export default Add;
